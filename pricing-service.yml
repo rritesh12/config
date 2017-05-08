@@ -1,0 +1,25 @@
+server:
+ port: 0
+
+eureka:
+ client:
+   serviceUrl:
+    defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true 
+ instance:
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} 
+    hostname: localhost
+    
+    
+    
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        sleepWindowInMilliseconds: 30000
+        requestVolumeThreshold: 20
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 300000
