@@ -15,6 +15,6 @@ eureka:
    
 turbine:
    clusterNameExpression: "'default'" # apps name
-   appConfig: customer-order-composite-service, order-service # service id,can pass multiple id with comma seperated
+   appConfig: catalog-price-composite-service # service id,can pass multiple id with comma seperated
    combineHostPort: true
-  # http://localhost:8762/turbine.stream?cluster=CUSTOMER-ORDER-COMPOSITE-SERVICE   
+    
