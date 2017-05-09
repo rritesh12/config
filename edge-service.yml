@@ -3,9 +3,6 @@ server:
   port: 8765 
   
 
-  
-  
- # Eureka server details,All eureka client need to use below URL for register. 
 eureka:
   client:
    serviceUrl:
@@ -33,6 +30,6 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 400000
    
-   # https://github.com/spring-cloud/spring-cloud-netflix/issues/321 : for time out issues
+   
