@@ -19,8 +19,9 @@ eureka:
     
 zuul:
   ignoredServices: "*"
+  prefix: /api
   routes:
-    catalog-price-composite-service: /composite/**
+    catalog-price-composite-service: /catalogs/**
     
     
 hystrix:
