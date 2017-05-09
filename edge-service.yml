@@ -13,6 +13,9 @@ eureka:
      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} 
      hostname: localhost
     
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 30000    
     
 zuul:
   ignoredServices: "*"
