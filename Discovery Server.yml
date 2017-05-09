@@ -2,12 +2,7 @@
 server:
   port: 8761 
   
-security:
-   user:
-     password: ${eureka.password} # Don't use a default password in a real app
-  
-  
- # Eureka server details,All eureka client need to use below URL for register. 
+
 eureka:
   server:
    enableSelfPreservation: false
