@@ -21,7 +21,7 @@ zuul:
   ignoredServices: "*"
   prefix: /api
   routes:
-    catalog-price-composite-service: /catalogs/**
+    catalog-price-composite-service: /composite/**
     
     
 hystrix:
